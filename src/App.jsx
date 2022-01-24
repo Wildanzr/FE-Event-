@@ -1,15 +1,16 @@
 import Header from "./components/header/Header"
 import Jumbotron from "./components/main/Jumbotron"
+import Stats from "./components/main/Stats"
 
 import './App.css'
 
-function App() {
-
+const App = () => {
   return (
-    <div className="App">
-      <Header/>
-      <Jumbotron/>
-    </div>
+    <>
+    <Header/>
+    <Jumbotron/>
+    <Stats/>
+    </>
   )
 }
 

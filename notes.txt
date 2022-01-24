@@ -2,3 +2,4 @@
 #1 - Add some dependencies
 #2 - Components header
 #3 - Components jumbotron
+#4 - Components stats
