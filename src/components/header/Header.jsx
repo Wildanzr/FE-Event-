@@ -5,7 +5,7 @@ import Logo from "../../images/logo.png"
 
 const Header = () => {
     return(
-        <section className="h-full w-full border-box transition-all duration-500 linear lg:px-24 md:px-20 px-3 py-3 bg-white">
+        <section className="h-full w-full border-box transition-all duration-500 linear lg:px-24 md:px-20 px-3 py-3 bg-cyan-300">
             <div className="navbar-1-1">
             <div className="container mx-auto flex flex-wrap flex-row items-center justify-between">
                 <a href="" className="flex font-medium items-center">
@@ -21,7 +21,7 @@ const Header = () => {
                 className="hidden lg:flex lg:items-center lg:w-auto w-full lg:ml-auto lg:mr-auto flex-wrap items-center text-base justify-center"
                 id="menu">
                 <nav
-                    className="lg:space-x-12 space-x-0 lg:flex items-center justify-between text-base pt-8 lg:pt-0 lg:space-y-0 space-y-6">
+                    className="lg:space-x-12 space-x-0 lg:flex items-center justify-between text-base pt-8 lg:pt-0 lg:space-y-0 space-y-6 text-[#003366]">
                     <a href="" className="block nav-link active font-medium">Home</a>
                     <a href="" className="block nav-link">Event</a>
                     <a href="" className="block nav-link">Company</a>
@@ -31,7 +31,7 @@ const Header = () => {
 
                 <div className="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
                 <button
-                    className="btn-fill text-white items-center border-0 py-1 px-6 focus:outline-none rounded-xl font-medium text-base mt-6 lg:mt-0">
+                    className="bg-[#003366] text-white items-center border-0 py-1 px-6 focus:outline-none rounded-full font-medium text-base mt-6 lg:mt-0">
                     Login
                 </button>
                 </div>

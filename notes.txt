@@ -1,3 +1,4 @@
 #0 - Initialize project app
 #1 - Add some dependencies
-#2 - Create hierearchy
+#2 - Components header
+#3 - Components jumbotron
