@@ -15,12 +15,6 @@
         transition: 0.3s;
       }
 
-      .navbar-1-1 nav a.nav-link:hover {
-        color: #2c3b3f;
-        font-weight: 500;
-        transition: 0.3s;
-      }
-
       .navbar-1-1 nav a.nav-link.active {
         color: #2c3b3f;
       }
