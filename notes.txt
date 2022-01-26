@@ -6,3 +6,4 @@
 #5 - Adding font
 #6 - Mobile header and jumbotron
 #7 - Add Information
+#8 - Add multi carousel dependencies
