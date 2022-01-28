@@ -2,6 +2,7 @@ import Header from "./components/header/Header"
 import Jumbotron from "./components/main/Jumbotron"
 import Stats from "./components/main/Stats"
 import Information from "./components/main/Information"
+import CompanyCarousel from "./components/main/CompanyCarousel"
 
 import './App.css'
 
@@ -12,6 +13,7 @@ const App = () => {
     <Jumbotron/>
     {/* <Stats/> */}
     <Information/>
+    <CompanyCarousel deviceType=""/>
     </>
   )
 }

@@ -7,3 +7,4 @@
 #6 - Mobile header and jumbotron
 #7 - Add Information
 #8 - Add multi carousel dependencies
+#9 - Add MUI and components company
