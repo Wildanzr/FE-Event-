@@ -2,7 +2,7 @@ import Header from "./components/header/Header"
 import Jumbotron from "./components/main/Jumbotron"
 import Stats from "./components/main/Stats"
 import Information from "./components/main/Information"
-import CompanyCarousel from "./components/main/CompanyCarousel"
+import PopularCompanies from "./components/main/PopularCompanies"
 import PopularEvents from "./components/main/PopularEvents"
 
 import './App.css'
@@ -14,7 +14,7 @@ const App = () => {
     <Jumbotron/>
     {/* <Stats/> */}
     <Information/>
-    <CompanyCarousel/>
+    <PopularCompanies/>
     <PopularEvents/>
     </>
   )
