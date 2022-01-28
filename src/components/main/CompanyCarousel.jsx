@@ -1,7 +1,7 @@
 import Tokped from "../../images/tokopedia.jpg"
 import CardCompany from "../util/CardCompany"
 
-import "../../css/CompanyCarousel.css"
+import "../../css/HideScrollBar.css"
 
 
 const CompanyCarousel = () => {
