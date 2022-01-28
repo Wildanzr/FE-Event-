@@ -1,37 +1,22 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+const CardCompany = ({image, title, info}) => {
+  return (
+    <div className="inline-block px-3">
+      <div className="w-64 h-80 max-w-xs overflow-hidden bg-cyan-100 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out">
+        <div className="flex flex-col mx-5 my-5 items-center justify-center w-10/12 ">
+          <img
+            src={image}
+            className="rounded-xl hover:brightness-50 cursor-pointer"
+          />
+        </div>
+        <div className="flex flex-col mx-5 my-5 w-10/12">
+          <h3 className="text-lg font-bold items-start text-[#003366] cursor-pointer">
+            {title}
+          </h3>
+          <p>{info}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-import Tokopedia from "../../images/tokopedia.jpg"
-
-const CardCompany = ({title}) => {
-    return (
-        <Card sx={{ maxWidth: 200 }}>
-            <CardMedia
-                component="img"
-                height="100"
-                image={Tokopedia}
-                alt="green iguana"
-            />
-            <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                {title}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica
-                </Typography>
-            </CardContent>
-            <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
-            </CardActions>
-        </Card>
-    )
-}
-
-export default CardCompany
+export default CardCompany;

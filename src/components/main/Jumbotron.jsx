@@ -16,9 +16,7 @@ const Jumbotron = () => {
                 </button>
             </div>
             <div className="w-full">
-                <div className="container">
                     <img src={Hero} className="mx-auto w-4/5" />
-                </div>
             </div>
         </div>
         <div className="inline-block w-full h-20 bg-gradient-to-b from-cyan-300 to-white" />

@@ -8,3 +8,4 @@
 #7 - Add Information
 #8 - Add multi carousel dependencies
 #9 - Add MUI and components company
+#10 - Fix folder structure and view

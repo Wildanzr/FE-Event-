@@ -1,4 +1,4 @@
-import "./Stats.css"
+import "../../css/Stats.css"
 
 const Stats = () => {
     return (
