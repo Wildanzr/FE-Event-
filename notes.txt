@@ -11,3 +11,4 @@
 #10 - Fix folder structure and view
 #11 - CardEvent mobile view
 #13 - Fix mobile view
+#14 - CardEvent desktop view

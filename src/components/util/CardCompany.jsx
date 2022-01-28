@@ -5,7 +5,7 @@ const CardCompany = ({image, title, info}) => {
         <div className="flex flex-col mx-5 my-5 items-center justify-center w-10/12 ">
           <img
             src={image}
-            className="rounded-xl hover:brightness-50 cursor-pointer"
+            className="rounded-xl hover:brightness-50 duration-300 cursor-pointer"
           />
         </div>
         <div className="flex flex-col mx-5 my-5 w-10/12">
