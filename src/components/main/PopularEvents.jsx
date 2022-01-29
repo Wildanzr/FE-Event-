@@ -23,9 +23,9 @@ const PopularEvents = () => {
   return (
     <div className="w-full bg-cyan-300 text-[#003366]">
       <div className="flex flex-col pt-5">
-        <h1 className="flex justify-center items-center font-bold text-4xl">
+        <h2 className="flex justify-center items-center font-bold text-4xl uppercase">
           Event
-        </h1>
+        </h2>
         <a
           href=""
           className="self-end justify-end justify-items-end text-xl pb-3 mx-5 hover:font-bold duration-300"

@@ -11,7 +11,7 @@ const PopularCompanies = () => {
   return (
     <div className="flex flex-col bg-white m-auto p-auto text-[#003366]">
       <div className="flex flex-col">
-        <h1 className="flex justify-center items-center font-bold text-4xl">
+        <h1 className="flex justify-center items-center font-bold text-4xl uppercase">
           Company
         </h1>
         <a href="" className="self-end justify-end justify-items-end text-xl pb-3 mx-5 hover:font-bold duration-300">See all {">"}</a>

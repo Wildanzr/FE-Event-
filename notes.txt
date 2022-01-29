@@ -15,3 +15,4 @@
 #15 - Remove MUI dependencies
 #16 - Add swiper dependencies
 #17 - Basic Testimonials
+#18 - Testimonials desktop view

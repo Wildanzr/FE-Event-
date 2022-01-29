@@ -1,27 +1,25 @@
 import StarIcon from '@mui/icons-material/Star'
 import StarHalfIcon from '@mui/icons-material/StarHalf'
 
+import "../../css/HideScrollBar.css"
+
 const CardTestimony = ({rate, testi, name, pic, org}) => {
 
     const isEven = rate % 2 == 0 ? true : false
     const rating = isEven ? rate / 2 : rate / 2 - 0.5
-    const rateData = []
-    for (var i = 0; i < rating; i++) {
-        rateData[i] = i
-    }
     
 
     return (
         <div className="flex flex-col w-80 h-80 bg-[#fefefe] rounded-xl shadow-xl mx-5">
             <div className="flex mx-10 my-10">
-                {rateData.map((id) => {
+                {Array.from(Array(rating), (i, e) => {
                     return (
-                        <StarIcon key={id} />
+                        <StarIcon color="warning" key={e} />
                     )
                 })}
-                {isEven ? "" : <StarHalfIcon/>}             
+                {isEven ? "" : <StarHalfIcon color="warning" />}             
             </div>
-            <div className="flex justify-start mx-10">
+            <div className="flex justify-start mx-10 h-full overflow-y-auto hide-scroll-bar">
                 <p>“{testi}”</p>
             </div>
             <div className="flex flex-row justify-start mx-10 my-10">
