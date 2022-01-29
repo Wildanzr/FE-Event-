@@ -13,3 +13,4 @@
 #13 - Fix mobile view
 #14 - CardEvent desktop view
 #15 - Remove MUI dependencies
+#16 - Add swiper dependencies
