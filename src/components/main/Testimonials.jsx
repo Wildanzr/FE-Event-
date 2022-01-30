@@ -1,11 +1,13 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
-import CardTestimony from "../util/CardTestimony";
+import { useState, useEffect } from "react"
+import { Swiper, SwiperSlide } from "swiper/react"
+import useResizeAware from "react-resize-aware"
+import { Pagination } from "swiper"
+import CardTestimony from "../util/CardTestimony"
 
-import Avatar from "../../images/avatar.png";
+import Avatar from "../../images/avatar.png"
 
-import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/css"
+import "swiper/css/pagination"
 
 const Testimonials = () => {
   const testimonies = [
@@ -49,10 +51,30 @@ const Testimonials = () => {
       name: "Wisnu",
       org: "Boss NFT",
     },
-  ];
+  ]
+
+  const [resizeListener, sizes] = useResizeAware()
+  const [view, setView] = useState(3)
+  const [space, setSpace] = useState(20)
+
+  useEffect(() => {
+    if (sizes.width >= 1024) {
+      setSpace(150)
+      setView(3)
+    }else if (sizes.width >= 768) {
+      setSpace(250)
+      setView(3)
+    }else if (sizes.width >= 640) {
+      setSpace(100)
+      setView(2)
+    }else {
+      setView(1)
+    }
+  }, [sizes])
 
   return (
     <div className="flex flex-col w-full justify-center items-center my-10">
+      {resizeListener}
       <div className="flex items-center justify-center">
         <h2 className="flex justify-center items-center font-bold text-4xl">
           TESTIMONIALS
@@ -61,9 +83,9 @@ const Testimonials = () => {
 
       <div className="flex flex-row w-11/12 items-center justify-center">
         <Swiper
-          slidesPerView={4}
+          slidesPerView={view}
           centeredSlides={true}
-          spaceBetween={20}
+          spaceBetween={space}
           grabCursor={true}
           pagination={{
             clickable: true,
@@ -82,12 +104,12 @@ const Testimonials = () => {
                   org={res.org}
                 />
               </SwiperSlide>
-            );
+            )
           })}
         </Swiper>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Testimonials;
+export default Testimonials
