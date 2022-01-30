@@ -5,6 +5,7 @@ import Information from "./components/main/Information"
 import PopularCompanies from "./components/main/PopularCompanies"
 import PopularEvents from "./components/main/PopularEvents"
 import Testimonials from "./components/main/Testimonials"
+import Footer from "./components/footer/Footer"
 
 import './App.css'
 
@@ -18,6 +19,7 @@ const App = () => {
     <PopularCompanies/>
     <PopularEvents/>
     <Testimonials/>
+    <Footer/>
     </>
   )
 }

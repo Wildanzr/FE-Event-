@@ -17,3 +17,4 @@
 #17 - Basic Testimonials
 #18 - Testimonials desktop view
 #19 - Responsive Testimonials
+#20 - Footer
