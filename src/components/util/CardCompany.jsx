@@ -1,3 +1,5 @@
+import React from 'react'
+
 const CardCompany = ({image, title, info}) => {
   return (
     <div className="inline-block px-3">

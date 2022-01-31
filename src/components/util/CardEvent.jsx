@@ -1,3 +1,5 @@
+import React from 'react'
+
 const CardEvent = ({image, title, info, color}) => {
   return (
     <div className="w-full  px-3 pt-0 mx-auto text-[#003366]">

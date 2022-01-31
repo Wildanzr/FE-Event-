@@ -1,3 +1,4 @@
+import React from 'react'
 import AboutUs from "../../images/group1.png"
 import Solution from "../../images/group2.png"
 
@@ -11,7 +12,7 @@ const Information = () => {
             <div className="w-11/12 justify-center items-center my-5 mx-10">
                 <h3 className="text-2xl uppercase font-bold text-center mb-2 lg:text-left">About Us</h3>
                 <p className="text-base text-center mx-auto lg:text-lg lg:text-left">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+                    EventPlus merupakan sosial media yang diperuntukkan untuk mendokumentasikan, mempromosikan, dan sebagai jembatan untuk mempertemukan pihak event organizer dengan perusahaan atau organisasi yang ingin memberikan sponsor. 
                 </p>
                 
                 <a href="" className="flex items-center justify-center lg:justify-start">
@@ -29,7 +30,7 @@ const Information = () => {
             <div className="w-11/12 justify-center items-center my-5 mx-10">
                 <h3 className="text-2xl uppercase font-bold text-center mb-2 lg:text-right">Our Solution</h3>
                 <p className="text-base text-center mx-auto lg:text-lg lg:text-right">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+                    Dengan menggunakan EventPlus, event organizer dapat mengirimkan proposal sponsorship kepada perusahaan atau organisasi. Begitu juga perusahaan atau organisasi dapat menawarkan pendanaan kegiatan kepada event yang dikehendaki.
                 </p>
                 
                 <a href="" className="flex items-center justify-center lg:justify-end">

@@ -1,3 +1,5 @@
+import React from 'react'
+
 import Header from "./components/header/Header"
 import Jumbotron from "./components/main/Jumbotron"
 import Stats from "./components/main/Stats"

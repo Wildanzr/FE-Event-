@@ -1,3 +1,4 @@
+import React from 'react'
 import { useEffect, useState } from "react";
 
 import CardEvent from "../util/CardEvent";
@@ -6,10 +7,44 @@ import Tok from "../../images/tokopedia.jpg";
 import "../../css/HideScrollBar.css";
 
 const PopularEvents = () => {
-  const eventData = [1, 2, 3, 4, 5, 6, 7];
   const [eventColor, setEventColor] = useState("bg-white")
   const [categoryId, setCategoryId] = useState(0)
   const [fetch, setFetch] = useState(true)
+
+  const eventData = [
+    {
+      name: "Tokopedia",
+      info: "Perusahaan perdagangan",
+    },
+    {
+      name: "Gojek",
+      info: "Transportasi kendaraan",
+    },
+    {
+      name: "Binar Academy",
+      info: "Kelas Online",
+    },
+    {
+      name: "BEM FILKOM",
+      info: "Organisasi Mahasiswa",
+    },
+    {
+      name: "Apple",
+      info: "Perusahaan Elektronik",
+    },
+    {
+      name: "Alibaba",
+      info: "Perdagangan Online",
+    },
+    {
+      name: "Oracle",
+      info: "Software",
+    },
+    {
+      name: "Kak Rose",
+      info: "Ayam Geprek",
+    },
+  ];
 
   const unvisited = "border-[#003366] bg-transparent border-2 border-lg text-base text-center font-bold px-8 py-1 mx-2 rounded-full cursor-pointer lg:px-20 lg:my-5 lg:py-5 lg:rounded-xl lg:text-xl lg:hover:bg-white lg:hover:border-white duration-300"
   const visited = "bg-white border-white border-2 border-lg text-base text-center font-bold px-8 py-1 mx-2 rounded-full cursor-pointer lg:px-20 lg:my-5 lg:py-5 lg:rounded-xl lg:text-xl lg:hover:bg-white lg:hover:border-white duration-300"
@@ -79,14 +114,14 @@ const PopularEvents = () => {
           </div>
 
           <div className="flex flex-row overflow-x-auto  hide-scroll-bar">
-            {eventData.map((id) => {
+            {eventData.map((evt, idx) => {
               return (
                 <CardEvent
                   image={Tok}
-                  title="Tokopedia"
-                  info="Lorem ipsum dolor sit amet"
+                  title={evt.name}
+                  info={evt.info}
                   color={eventColor}
-                  key={id}
+                  key={idx}
                 />
               );
             })}

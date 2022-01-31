@@ -18,3 +18,4 @@
 #18 - Testimonials desktop view
 #19 - Responsive Testimonials
 #20 - Footer
+#21 - Landing page v1

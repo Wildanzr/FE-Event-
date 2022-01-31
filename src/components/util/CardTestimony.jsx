@@ -1,5 +1,9 @@
+import React from 'react'
+
 import StarIcon from '@mui/icons-material/Star'
 import StarHalfIcon from '@mui/icons-material/StarHalf'
+
+import Avatar from "../../images/avatar.png"
 
 import "../../css/HideScrollBar.css"
 
@@ -24,7 +28,7 @@ const CardTestimony = ({rate, testi, name, pic, org}) => {
             </div>
             <div className="flex flex-row justify-start mx-10 my-10">
                 <div className="w-14 h-14 bg-rose-500 rounded-full overflow-clip">
-                    <img src={pic} className="w-full h-full" />
+                    <img src={Avatar} className="w-full h-full" />
                 </div>
                 <div className="flex flex-col mx-5">
                     <p className="text-lg font-bold">{name}</p>
