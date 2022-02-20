@@ -22,3 +22,4 @@
 #22 - Insall new font and customization
 #23 - Components stats
 #24 - Components information
+#25 - Add marquee dependency and company logos

@@ -1,70 +1,37 @@
 import React from "react";
-import Tokped from "../../images/tokopedia.jpg";
-import CardCompany from "../util/CardCompany";
-
-import "../../css/HideScrollBar.css";
+import Marquee from "react-fast-marquee";
+import IBM from "../../images/ibm.png";
+import Bangkit from "../../images/bangkit.png";
+import Google from "../../images/google.png";
+import Alcatel from "../../images/alcatel.png";
+import Aws from "../../images/aws.png";
+import BSI from "../../images/bsi.png";
 
 const PopularCompanies = () => {
-  const companyData = [
-    {
-      name: "Tokopedia",
-      info: "Perusahaan perdagangan",
-    },
-    {
-      name: "Gojek",
-      info: "Transportasi kendaraan",
-    },
-    {
-      name: "Binar Academy",
-      info: "Kelas Online",
-    },
-    {
-      name: "BEM FILKOM",
-      info: "Organisasi Mahasiswa",
-    },
-    {
-      name: "Apple",
-      info: "Perusahaan Elektronik",
-    },
-    {
-      name: "Alibaba",
-      info: "Perdagangan Online",
-    },
-    {
-      name: "Oracle",
-      info: "Software",
-    },
-    {
-      name: "Kak Rose",
-      info: "Ayam Geprek",
-    },
-  ];
-
   return (
-    <div className="flex flex-col bg-white m-auto p-auto text-[#003366]">
-      <div className="flex flex-col">
-        <h1 className="flex justify-center items-center font-bold text-4xl uppercase">
-          Company
-        </h1>
-        <a
-          href=""
-          className="self-end justify-end justify-items-end text-xl pb-3 mx-5 hover:font-bold duration-300"
-        >
-          See all {">"}
-        </a>
-      </div>
-      <div className="flex overflow-x-auto pb-10 hide-scroll-bar">
-        <div className="flex flex-nowrap md:ml-10 ml-5 ">
-          {companyData.map((comp, idx) => {
-            return (
-              <CardCompany
-                key={idx}
-                image={Tokped}
-                title={comp.name}
-                info={comp.info}
-              />
-            );
-          })}
+    <div className="w-full flex flex-col items-center justify-center bg-[#F2F5FA] m-auto p-auto text-[#003366] py-10">
+      <div className="w-11/12 flex flex-col">
+        <div className="flex flex-row">
+          <Marquee speed={25} gradient={false}>
+            <div className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 mx-5 hover:bg-slate-300">
+              <img src={IBM} />
+            </div>
+            <div className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 mx-5 hover:bg-slate-300">
+              <img src={Bangkit} />
+            </div>
+            <div className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 mx-5 hover:bg-slate-300">
+              <img src={Google} />
+            </div>
+            <div className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 mx-5 hover:bg-slate-300">
+              <img src={Alcatel} />
+            </div>
+            <div className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 mx-5 hover:bg-slate-300">
+              <img src={Aws} />
+            </div>
+            <div className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 mx-5 hover:bg-slate-300">
+              <img src={BSI} />
+            </div>
+          </Marquee>
         </div>
       </div>
     </div>
