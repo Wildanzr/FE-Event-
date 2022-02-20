@@ -2,7 +2,7 @@ import React from 'react'
 
 const CardEvent = ({image, title, info, color}) => {
   return (
-    <div className="w-full  px-3 pt-0 mx-auto text-[#003366]">
+    <div className="w-full px-3 pt-0 mx-auto text-[#003366]">
       <div className="flex items-center justify-around">
         <div className="relative mt-16 mb-8">
           <div className={`rounded-2xl overflow-hidden shadow-md w-72 max-w-72 h-80 max-h-80 ${color} py-10 duration-300`}>

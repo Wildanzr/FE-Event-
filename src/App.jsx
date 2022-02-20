@@ -16,7 +16,7 @@ const App = () => {
     <>
     <Header/>
     <Jumbotron/>
-    {/* <Stats/> */}
+    <Stats/>
     <Information/>
     <PopularCompanies/>
     <PopularEvents/>

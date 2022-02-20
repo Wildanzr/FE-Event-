@@ -19,3 +19,5 @@
 #19 - Responsive Testimonials
 #20 - Footer
 #21 - Landing page v1
+#22 - Insall new font and customization
+#23 - Components stats
