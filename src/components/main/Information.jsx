@@ -7,7 +7,7 @@ const Information = () => {
         <>
         <div className="w-full flex flex-col justify-center items-center bg-white text-[#003366] py-0 lg:flex-row">
             <div className="flex w-full justify-center items-center my-5 mx-10 lg:justify-end">
-                <img src={AboutUs} className="w-3/5 lg:w-4/6 items-center justify-center"/>
+                <img src={AboutUs} className="w-3/5 h-3/5 lg:h-4/6 lg:w-4/6 items-center justify-center"/>
             </div>
             <div className="w-11/12 justify-center items-center my-5 mx-10">
                 <h3 className="text-2xl uppercase font-bold text-center mb-2 lg:text-left">About Us</h3>
@@ -25,7 +25,7 @@ const Information = () => {
 
         <div className="w-full flex flex-col justify-center items-center bg-white text-[#003366] py-0 lg:flex-row-reverse">
             <div className="flex w-full justify-center my-5 mx-10 lg:justify-start">
-                <img src={Solution} className="w-3/5 lg:w-4/6 items-center justify-center"/>
+                <img src={Solution} className="w-3/5 h-3/5 lg:h-4/6 lg:w-4/6 items-center justify-center"/>
             </div>
             <div className="w-11/12 justify-center items-center my-5 mx-10">
                 <h3 className="text-2xl uppercase font-bold text-center mb-2 lg:text-right">Our Solution</h3>
