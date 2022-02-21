@@ -23,3 +23,4 @@
 #23 - Components stats
 #24 - Components information
 #25 - Add marquee dependency and company logos
+#26 - Fix company logos
