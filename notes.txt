@@ -24,3 +24,4 @@
 #24 - Components information
 #25 - Add marquee dependency and company logos
 #26 - Fix company logos
+#27 - Optimize company marque logic

@@ -31,7 +31,7 @@ const Header = () => {
                     <div className="hidden text-center lg:flex lg:items-center lg:w-auto w-full" id="menu">
                         <a href="">
                             <button
-                                className="bg-[#003366] font-nunito text-white items-center border-0 py-1 px-10 focus:outline-none rounded-full font-medium text-base mt-6 lg:mt-0">
+                                className="bg-[#003366] font-nunito text-white items-center border-0 py-1 px-10 focus:outline-none rounded-lg font-medium text-base mt-6 lg:mt-0">
                                 Login
                             </button>
                         </a>

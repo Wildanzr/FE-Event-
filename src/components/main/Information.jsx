@@ -1,5 +1,6 @@
 import React from "react";
-import Info from "../../images/about.png";
+import About from "../../images/about.png";
+import Solution from "../../images/solution.png";
 
 const Information = () => {
   return (
@@ -7,7 +8,7 @@ const Information = () => {
       <div className="flex flex-col justify-center items-center py-0 lg:flex-row">
         <div className="flex w-full justify-center items-center my-2 mx-10 lg:justify-end">
           <img
-            src={Info}
+            src={About}
             className="w-3/5 h-3/5 lg:h-3/5 lg:w-3/5 items-center justify-center"
           />
         </div>
@@ -36,7 +37,7 @@ const Information = () => {
       <div className="flex flex-col justify-center items-center py-0 lg:flex-row-reverse">
         <div className="flex w-full justify-center my-2 mx-10 lg:justify-start">
           <img
-            src={Info}
+            src={Solution}
             className="w-3/5 h-3/5 lg:h-3/5 lg:w-3/5 items-center justify-center"
           />
         </div>

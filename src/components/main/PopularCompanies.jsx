@@ -20,96 +20,32 @@ import Telkok from "../../images/telkok.png";
 import Xl from "../../images/xl.png";
 
 const PopularCompanies = () => {
-  const companies = [
-    Alcatel,
-    Aws,
-    Bangkit,
-    BSI,
-    Ericson,
-    Google,
-    IBM,
-    Indosat,
-    Kominfo,
-    Intel,
-    Kampus,
-    Lenovo,
-    Line,
-    Linta,
-    Micro,
-    Samsung,
-    Telkok,
-    Xl,
-  ];
+  const firstRow = [Alcatel, Aws, Bangkit, BSI, Ericson, Google];
+  const secondRow = [IBM, Indosat, Kominfo, Intel, Kampus, Lenovo];
+  const thirdRow = [Line, Linta, Micro, Samsung, Telkok, Xl];
+  const companies = [firstRow, secondRow, thirdRow];
   return (
     <div className="w-full flex flex-col items-center justify-center bg-[#F2F5FA] m-auto p-auto text-[#003366]">
-      <h1 className="text-3xl font-black pb-10">Company That Join With Us</h1>
+      <h1 className="text-3xl font-black pb-5">Company That Join With Us</h1>
       <div className="w-full flex flex-col">
-        <Marquee speed={30} gradient={false}>
-          <div className="flex flex-row">
-            <div className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 my-5 mx-6 hover:bg-slate-300">
-              <img src={Alcatel} />
-            </div>
-            <div className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 my-5 mx-6 hover:bg-slate-300">
-              <img src={Aws} />
-            </div>
-            <div className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 my-5 mx-6 hover:bg-slate-300">
-            <img src={Bangkit} />
-            </div>
-            <div className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 my-5 mx-6 hover:bg-slate-300">
-            <img src={BSI} />
-            </div>
-            <div className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 my-5 mx-6 hover:bg-slate-300">
-              <img src={Ericson} />
-            </div>
-            <div className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 my-5 mx-6 hover:bg-slate-300">
-              <img src={Google} />
-            </div>
-          </div>
-        </Marquee>
-        <Marquee speed={30} gradient={false}>
-          <div className="flex flex-row">
-            <div className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 my-5 mx-8 hover:bg-slate-300">
-              <img src={IBM} />
-            </div>
-            <div className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 my-5 mx-8 hover:bg-slate-300">
-              <img src={Indosat} />
-            </div>
-            <div className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 my-5 mx-8 hover:bg-slate-300">
-              <img src={Kominfo} />
-            </div>
-            <div className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 my-5 mx-8 hover:bg-slate-300">
-              <img src={Intel} />
-            </div>
-            <div className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 my-5 mx-8 hover:bg-slate-300">
-              <img src={Kampus} />
-            </div>
-            <div className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 my-5 mx-8 hover:bg-slate-300">
-              <img src={Lenovo} />
-            </div>
-          </div>
-        </Marquee>
-        <Marquee speed={30} gradient={false}>
-          <div className="flex flex-row">
-            <div className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 my-5 mx-6 hover:bg-slate-300">
-              <img src={Line} />
-            </div>
-            <div className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 my-5 mx-6 hover:bg-slate-300">
-              <img src={Linta} />
-            </div>
-            <div className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 my-5 mx-6 hover:bg-slate-300">
-              <img src={Micro} />
-            </div>
-            <div className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 my-5 mx-6 hover:bg-slate-300">
-              <img src={Samsung} />
-            </div>
-            <div className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 my-5 mx-6 hover:bg-slate-300">
-              <img src={Telkok} />
-            </div>
-            <div className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 my-5 mx-6 hover:bg-slate-300">
-              <img src={Xl} />
-            </div>
-          </div>
-        </Marquee>
+        {companies.map((row, index) => {
+          return (
+            <Marquee speed={30} gradient={false}>
+              <div className="flex flex-row" key={index}>
+                {row.map((company, index) => {
+                  return (
+                    <div
+                      className="flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 my-5 mx-6 hover:bg-slate-300"
+                      key={index}
+                    >
+                      <img src={company} />
+                    </div>
+                  );
+                })}
+              </div>
+            </Marquee>
+          );
+        })}
       </div>
     </div>
   );
