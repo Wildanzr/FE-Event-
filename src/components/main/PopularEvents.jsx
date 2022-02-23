@@ -1,131 +1,86 @@
-import React from 'react'
-import { useEffect, useState } from "react";
-
+import React from "react";
 import CardEvent from "../util/CardEvent";
+import Tokped from "../../images/tokopedia.jpg";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
 
-import Tok from "../../images/tokopedia.jpg";
-import "../../css/HideScrollBar.css";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+import compfest1 from "../../images/temp/compfest1.jpg";
+import compfest2 from "../../images/temp/compfest2.jpg";
+import fair1 from "../../images/temp/fair1.jpg";
+import fair2 from "../../images/temp/fair2.jpg";
+import feskabi1 from "../../images/temp/feskabi1.png";
+import feskabi2 from "../../images/temp/feskabi2.jpg";
+import hology1 from "../../images/temp/hology1.png";
+import hology2 from "../../images/temp/hology2.jpg";
+import itcc1 from "../../images/temp/itcc1.jpg";
+import itcc2 from "../../images/temp/itcc2.jpg";
 
 const PopularEvents = () => {
-  const [eventColor, setEventColor] = useState("bg-white")
-  const [categoryId, setCategoryId] = useState(0)
-  const [fetch, setFetch] = useState(true)
-
-  const eventData = [
+  const events = [
     {
-      name: "Tokopedia",
-      info: "Perusahaan perdagangan",
+      name: "Hology",
+      img: hology2,
+      ico: hology1,
+      info: "House of Technology (HOLOGY) merupakan event teknologi tahunan bertaraf nasional yang diselenggarakan oleh Fakultas Ilmu Komputer Universitas Brawijaya sejak tahun 2018. Di tahun keempat ini, HOLOGY terdiri dari 4 rangkaian acara yaitu webinar & workshop, competition, exhibition, dan awarding night.",
     },
     {
-      name: "Gojek",
-      info: "Transportasi kendaraan",
+      name: "Compfest",
+      img: compfest2,
+      ico: compfest1,
+      info: "COMPFEST adalah acara IT tahunan terbesar yang telah diselenggarakan lebih dari 10 tahun oleh mahasiswa Fakultas Ilmu Komputer, Universitas Indonesia.",
     },
     {
-      name: "Binar Academy",
-      info: "Kelas Online",
+      name: "Feskabi",
+      img: feskabi2,
+      ico: feskabi1,
+      info: "Festival Edukasi Bank Indonesia atau FesKaBI (sebelumnya dikenal sebagai BI Goes to Campus) merupakan salah satu program tahunan Bank Indonesia untuk mensosialisasikan dan mengkomunikasikan program-program strategis Bank Indonesia kepada publik, khususnya generasi muda.",
     },
     {
-      name: "BEM FILKOM",
-      info: "Organisasi Mahasiswa",
+      name: "Jakarta Fair",
+      img: fair2,
+      ico: fair1,
+      info: "Pekan Raya Jakarta atau Jakarta Fair adalah acara pameran tahunan terbesar di Asia Tenggara. Walaupun dinamai 'pekan', biasanya berlangsung selama satu bulan penuh dari bulan Juni sampai bulan Juli untuk memperingati selamat hari ulang tahun Jakarta. PRJ pertama diadakan pada tahun 1968.",
     },
     {
-      name: "Apple",
-      info: "Perusahaan Elektronik",
-    },
-    {
-      name: "Alibaba",
-      info: "Perdagangan Online",
-    },
-    {
-      name: "Oracle",
-      info: "Software",
-    },
-    {
-      name: "Kak Rose",
-      info: "Ayam Geprek",
+      name: "ITCC",
+      img: itcc2,
+      ico: itcc1,
+      info: "Information Technology Creative Competition adalah kompetisi bidang teknologi informasi yang diselenggarakan oleh himpunan mahasiswa teknologi informasi (HMTI) Universitas Udayana.",
     },
   ];
 
-  const unvisited = "border-[#003366] bg-transparent border-2 border-lg text-base text-center font-bold px-8 py-1 mx-2 rounded-full cursor-pointer lg:px-20 lg:my-5 lg:py-5 lg:rounded-xl lg:text-xl lg:hover:bg-white lg:hover:border-white duration-300"
-  const visited = "bg-white border-white border-2 border-lg text-base text-center font-bold px-8 py-1 mx-2 rounded-full cursor-pointer lg:px-20 lg:my-5 lg:py-5 lg:rounded-xl lg:text-xl lg:hover:bg-white lg:hover:border-white duration-300"
-
-  useEffect(() => {
-    if(fetch)
-      setFetch(false)
-
-  },[fetch, setFetch])
-
   return (
-    <div className="w-full bg-cyan-300 text-[#003366]">
+    <div className="w-full bg-[#F2F5FA] text-[#003366] py-10">
       <div className="flex flex-col pt-5">
-        <h2 className="flex justify-center items-center font-bold text-4xl uppercase">
-          Event
+        <h2 className="flex justify-center items-center font-black text-3xl">
+          Popular Events
         </h2>
-        <a
-          href=""
-          className="self-end justify-end justify-items-end text-xl pb-3 mx-5 hover:font-bold duration-300"
-        >
-          See all {">"}
-        </a>
-      </div>
-      <div className="flex flex-col w-full lg:flex-row">
-        <div className="w-full mx-auto flex flex-col lg:flex-row">
-          <div className="flex flex-row overflow-x-auto hide-scroll-bar lg:mx-10 lg:flex-col lg:overflow-visible">
-            <div
-              onClick={() => {
-                setEventColor("bg-white")
-                setFetch(true)
-                setCategoryId(0)
-              }}
-              className={categoryId == 0 ? visited : unvisited}
-            >
-              Technology
-            </div>
-            <div
-              onClick={() => {
-                setEventColor("bg-pink-300")
-                setFetch(true)
-                setCategoryId(1)
-              }}
-              className={categoryId == 1 ? visited : unvisited}
-            >
-              Concert
-            </div>
-            <div
-              onClick={() => {
-                setEventColor("bg-indigo-300")
-                setFetch(true)
-                setCategoryId(2)
-              }}
-              className={categoryId == 2 ? visited : unvisited}
-            >
-              Seminar
-            </div>
-            <div
-              onClick={() => {
-                setEventColor("bg-rose-300")
-                setFetch(true)
-                setCategoryId(3)
-              }}
-              className={categoryId == 3 ? visited : unvisited}
-            >
-              Exhibition
-            </div>
-          </div>
-
-          <div className="flex flex-row overflow-x-auto  hide-scroll-bar">
-            {eventData.map((evt, idx) => {
+        <div className="flex flex-row">
+          <Swiper
+            slidesPerView={"auto"}
+            centeredSlides={true}
+            spaceBetween={100}
+            grabCursor={true}
+            className="mySwiper"
+          >
+            {events.map((event, idx) => {
               return (
-                <CardEvent
-                  image={Tok}
-                  title={evt.name}
-                  info={evt.info}
-                  color={eventColor}
-                  key={idx}
-                />
+                <SwiperSlide>
+                  <CardEvent
+                    image={event.img}
+                    info={event.info}
+                    title={event.name}
+                    icon={event.ico}
+                    color="bg-white"
+                  />
+                </SwiperSlide>
               );
             })}
-          </div>
+          </Swiper>
         </div>
       </div>
     </div>
