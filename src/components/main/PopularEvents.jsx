@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react"
 import CardEvent from "../util/CardEvent";
-import Tokped from "../../images/tokopedia.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useResizeDetector } from 'react-resize-detector'
 import { Pagination } from "swiper";
 
 // Import Swiper styles
@@ -20,6 +20,32 @@ import itcc1 from "../../images/temp/itcc1.jpg";
 import itcc2 from "../../images/temp/itcc2.jpg";
 
 const PopularEvents = () => {
+
+  const { width, height, ref } = useResizeDetector()
+  const [view, setView] = useState(3)
+  const [space, setSpace] = useState(20)
+
+  useEffect(() => {
+    if (width >= 1021) {
+      setSpace(150)
+      setView(4)
+    }if (width >= 1024) {
+      setSpace(350)
+      setView(4)
+    }else if (width >= 768) {
+      setSpace(300)
+      setView(3)
+    }else if (width >= 640) {
+      setSpace(100)
+      setView(2)
+    }else if (width >= 481) {
+      setSpace(230)
+      setView(2)
+    }else {
+      setView(1)
+    }
+  }, [width])
+
   const events = [
     {
       name: "Hology",
@@ -54,17 +80,21 @@ const PopularEvents = () => {
   ];
 
   return (
-    <div className="w-full bg-[#F2F5FA] text-[#003366] py-10">
+    <div className="w-full bg-[#F2F5FA] text-[#003366] py-10" ref={ref}>
       <div className="flex flex-col pt-5">
         <h2 className="flex justify-center items-center font-black text-3xl">
           Popular Events
         </h2>
         <div className="flex flex-row">
           <Swiper
-            slidesPerView={"auto"}
+            slidesPerView={view}
             centeredSlides={true}
-            spaceBetween={100}
+            spaceBetween={space}
             grabCursor={true}
+            pagination={{
+              dynamicBullets: true,
+            }}
+            modules={[Pagination]}
             className="mySwiper"
           >
             {events.map((event, idx) => {

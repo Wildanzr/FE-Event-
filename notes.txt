@@ -26,3 +26,4 @@
 #26 - Fix company logos
 #27 - Optimize company marque logic
 #28 - Popular events
+#29 - Responsive for events

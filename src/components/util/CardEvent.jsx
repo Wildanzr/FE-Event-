@@ -15,7 +15,7 @@ const CardEvent = ({ image, title, info, color, icon }) => {
               <div className="h-20 w-20">
                 <img
                   src={icon}
-                  className="rounded-full object-cover h-full w-full shadow-md hover:brightness-50 duration-300 cursor-pointer"
+                  className="rounded-full object-cover h-full w-full bg-white shadow-md hover:brightness-50 duration-300 cursor-pointer"
                 />
               </div>
             </div>

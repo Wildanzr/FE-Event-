@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { useResizeDetector } from 'react-resize-detector'
-import { Pagination } from 'swiper'
 import CardTestimony from "../util/CardTestimony"
+import { Pagination } from "swiper";
 
 import "swiper/css"
 import "swiper/css/pagination"
@@ -71,7 +71,7 @@ const Testimonials = () => {
   }, [width])
 
   return (
-    <div className="flex flex-col w-full justify-center items-center my-10" ref={ref}>
+    <div className="flex flex-col w-full bg-[#F2F5FA] justify-center items-center py-10" ref={ref}>
       <div className="flex items-center justify-center">
         <h2 className="flex justify-center items-center font-bold text-4xl">
           TESTIMONIALS
@@ -79,31 +79,7 @@ const Testimonials = () => {
       </div>
 
       <div className="flex flex-row w-11/12 items-center justify-center">
-        <Swiper
-          slidesPerView={view}
-          centeredSlides={true}
-          spaceBetween={space}
-          grabCursor={true}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Pagination]}
-          className="mySwiper w-full my-10"
-        >
-          {testimonies.map((res, id) => {
-            return (
-              <SwiperSlide key={id}>
-                <CardTestimony
-                  rate={res.rate}
-                  testi={res.testi}
-                  pic={res.pic}
-                  name={res.name}
-                  org={res.org}
-                />
-              </SwiperSlide>
-            )
-          })}
-        </Swiper>
+        Hello womeh
       </div>
     </div>
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 import "../../css/Header.css"
-import Logo from "../../images/logo.png"
+import Logo from "../../images/logoevent.jpg"
 
 const Header = () => {
     return(
@@ -8,7 +8,7 @@ const Header = () => {
             <div className="navbar-1-1">
                 <div className="container mx-auto flex flex-wrap flex-row items-center justify-between md:px-0 md:py-1">
                     <a href="" className="flex font-medium items-center">
-                        <img src={Logo} className="items-center" width="100" height="80" />
+                        <img src={Logo} className="items-center rounded-lg" width="120" height="80" />
                     </a>
                     <label htmlFor="menu-toggle" className="cursor-pointer lg:hidden block">
                     <svg className="w-6 h-6" fill="none" stroke="#092A33" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

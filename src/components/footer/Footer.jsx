@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from "../../images/logo.png"
+import Logo from "../../images/logoevent.jpg"
 
 import FacebookIcon from "@mui/icons-material/Facebook"
 import TwitterIcon from "@mui/icons-material/Twitter"
@@ -8,12 +8,12 @@ import PinterestIcon from "@mui/icons-material/Pinterest"
 
 const Footer = () => {
   return (
-    <div className="bg-[#003366] mt-10">
+    <div className="bg-white text-[#003366] mt-10">
       <div className="flex flex-col items-center md:flex-row">
         <div className="flex flex-col w-10/12 my-5">
-          <div className=" w-full text-white mx-auto md:w-8/12">
-            <img src={Logo} className="w-2/4 my-5" />
-            <p className="text-white text-sm">
+          <div className=" w-full mx-auto md:w-8/12">
+            <img src={Logo} className="w-2/4 my-5 rounded-lg" />
+            <p className="text-sm">
               Mulai dari acara musik, diskusi, workshop hingga online webinar
               bisa mendapat sponsor dengan mudah. Buat Event Online sekarang
               lebih mudah di EVENTPLUS
@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-row w-10/12 mt-10 justify-between text-white md:justify-around">
+        <div className="flex flex-row w-10/12 mt-10 justify-between md:justify-around">
           <div className="flex flex-col">
             <p className="font-bold text-lg">More Info</p>
             <div className="flex flex-col my-4">

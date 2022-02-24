@@ -27,7 +27,7 @@ const PopularCompanies = () => {
   var size = 6;
   return (
     <div className="w-full flex flex-col items-center justify-center bg-[#F2F5FA] m-auto p-auto text-[#003366]">
-      <h1 className="text-3xl font-black pb-5">Companies That Join With Us</h1>
+      <h1 className="text-3xl text-center font-black pb-5">Popular Companies</h1>
       <div className="w-full flex flex-col">
         {companies.map((row, index) => {
           var style = index === 1 ? 5 : 10;
