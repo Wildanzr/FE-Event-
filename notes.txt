@@ -27,3 +27,4 @@
 #27 - Optimize company marque logic
 #28 - Popular events
 #29 - Responsive for events
+#30 - Testimonials

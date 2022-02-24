@@ -1,42 +1,45 @@
-import React from 'react'
+import React from "react";
 
-import StarIcon from '@mui/icons-material/Star'
-import StarHalfIcon from '@mui/icons-material/StarHalf'
+import Avatar from "../../images/avatar.png";
+import TwitterIcon from "@mui/icons-material/Twitter";
 
-import Avatar from "../../images/avatar.png"
+import "../../css/HideScrollBar.css";
 
-import "../../css/HideScrollBar.css"
-
-const CardTestimony = ({rate, testi, name, pic, org}) => {
-
-    const isEven = rate % 2 == 0 ? true : false
-    const rating = isEven ? rate / 2 : rate / 2 - 0.5
-    
-
-    return (
-        <div className="flex flex-col w-80 h-80 bg-[#fefefe] rounded-xl shadow-xl mx-5">
-            <div className="flex mx-10 my-10">
-                {Array.from(Array(rating), (i, e) => {
-                    return (
-                        <StarIcon color="warning" key={e} />
-                    )
-                })}
-                {isEven ? "" : <StarHalfIcon color="warning" />}             
-            </div>
-            <div className="flex justify-start mx-10 h-full overflow-y-auto hide-scroll-bar">
-                <p>“{testi}”</p>
-            </div>
-            <div className="flex flex-row justify-start mx-10 my-10">
-                <div className="w-14 h-14 bg-rose-500 rounded-full overflow-clip">
-                    <img src={Avatar} className="w-full h-full object-cover" />
+const CardTestimony = ({ ava, name, sub, testi }) => {
+  return (
+    <div className="w-full mx-7 text-[#003366] drop-shadow-md">
+      <div className="flex items-center">
+        <div className="relative mt-16 mb-8">
+          <div
+            className={`rounded-2xl overflow-hidden shadow-md w-80 h-80 max-h-80 bg-white py-8 duration-300`}
+          >
+            <div className="flex flex-row px-5">
+              <div className="flex w-3/12 items-center justify-center">
+                <div className="flex h-14 w-14">
+                  <img
+                    src={Avatar}
+                    className="rounded-full object-cover h-full w-full bg-white shadow-md hover:brightness-50 duration-300 cursor-pointer"
+                  />
                 </div>
-                <div className="flex flex-col mx-5">
-                    <p className="text-lg font-bold">{name}</p>
-                    <p className="text-lg font-bold">{org}</p>
-                </div>
+              </div>
+              <div className="flex flex-col w-6/12 justify-start items-start py-1">
+                <h2>{name}</h2>
+                <p>{sub}</p>
+              </div>
+              <div className="flex w-3/12 items-center justify-center">
+                <TwitterIcon color="primary" />
+              </div>
             </div>
+            <div className="flex flex-col items-center mt-10">
+              <div className="flex justify-center w-10/12 h-32">
+                <p className="text-sm text-justify">{testi}</p>
+              </div>
+            </div>
+          </div>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-export default CardTestimony
+export default CardTestimony;

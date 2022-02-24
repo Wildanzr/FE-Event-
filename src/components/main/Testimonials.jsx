@@ -56,14 +56,20 @@ const Testimonials = () => {
   const [space, setSpace] = useState(20)
 
   useEffect(() => {
-    if (width >= 1024) {
+    if (width >= 1021) {
       setSpace(150)
-      setView(3)
+      setView(4)
+    }if (width >= 1024) {
+      setSpace(350)
+      setView(4)
     }else if (width >= 768) {
-      setSpace(250)
+      setSpace(300)
       setView(3)
     }else if (width >= 640) {
       setSpace(100)
+      setView(2)
+    }else if (width >= 481) {
+      setSpace(230)
       setView(2)
     }else {
       setView(1)
@@ -71,15 +77,33 @@ const Testimonials = () => {
   }, [width])
 
   return (
-    <div className="flex flex-col w-full bg-[#F2F5FA] justify-center items-center py-10" ref={ref}>
-      <div className="flex items-center justify-center">
-        <h2 className="flex justify-center items-center font-bold text-4xl">
-          TESTIMONIALS
+    <div className="w-full bg-[#F2F5FA] text-[#003366] py-10" ref={ref}>
+      <div className="flex flex-col pt-5">
+        <h2 className="flex justify-center items-center font-black text-3xl">
+          Testimonials
         </h2>
-      </div>
-
-      <div className="flex flex-row w-11/12 items-center justify-center">
-        Hello womeh
+        <div className="flex flex-row py-">
+        <Swiper
+            slidesPerView={view}
+            centeredSlides={true}
+            spaceBetween={space}
+            grabCursor={true}
+            pagination={{
+              dynamicBullets: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            {testimonies.map((data, idx) => {
+              return (
+                <SwiperSlide key={idx}>
+                  <CardTestimony name={data.name} sub={data.org} testi={data.testi}/>
+                </SwiperSlide>
+              )
+            })}
+            
+          </Swiper>
+        </div>
       </div>
     </div>
   )
