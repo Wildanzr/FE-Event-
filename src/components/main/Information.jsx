@@ -5,7 +5,7 @@ import Solution from "../../images/solution.png";
 const Information = () => {
   return (
     <div className="w-full bg-[#F2F5FA] text-[#003366] py-10">
-      <div className="flex flex-col justify-center items-center py-0 lg:flex-row">
+      <div className="flex flex-col justify-center items-center py-0 lg:flex-row" data-aos={"zoom-in-left"} data-aos-anchor="#about">
         <div className="flex w-full justify-center items-center my-2 mx-10 lg:justify-end">
           <img
             src={About}
@@ -16,7 +16,7 @@ const Information = () => {
           <h3 className="text-2xl uppercase font-bold text-center mb-2 lg:text-left">
             About Us
           </h3>
-          <p className="text-lg text-center mx-auto lg:text-lg lg:text-left">
+          <p className="text-lg text-center mx-auto lg:text-lg lg:text-left" id="about">
             Event plus merupakan platform yang dapat membantu kegiatan
             sponsorship dalam pencarian sponsor untuk pendanaan suatu acara
             maupun kegiatan yang tidak terbatas pada lembaga atau perusahaan
@@ -34,7 +34,7 @@ const Information = () => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center py-0 lg:flex-row-reverse">
+      <div className="flex flex-col justify-center items-center py-0 lg:flex-row-reverse" data-aos={"zoom-in-right"} data-aos-anchor="#solution">
         <div className="flex w-full justify-center my-2 mx-10 lg:justify-start">
           <img
             src={Solution}
@@ -45,7 +45,7 @@ const Information = () => {
           <h3 className="text-2xl uppercase font-bold text-center mb-2 lg:text-right">
             Our Solutions
           </h3>
-          <p className="text-lg text-center mx-auto lg:text-lg lg:text-right">
+          <p className="text-lg text-center mx-auto lg:text-lg lg:text-right" id="solution">
             Sistem pada Eventplus akan memberikan kemudahan dan keamanan dalam
             perjanjian kerja sama sponsorship. Eventplus bertindak sebagai pihak
             penengah dalam komunikasi antara penyelenggara acara dengan sponsor

@@ -28,3 +28,4 @@
 #28 - Popular events
 #29 - Responsive for events
 #30 - Testimonials
+#31 - Add and implement aos dependencies
