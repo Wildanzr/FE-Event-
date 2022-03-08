@@ -1,9 +1,9 @@
 import React from 'react'
-import "../../css/Header.css"
-import Logo from "../../images/logoevent.jpg"
+import '../../css/Header.css'
+import Logo from '../../images/logoevent.jpg'
 
 const Header = () => {
-    return(
+  return (
         <section className="h-full w-full border-box transition-all duration-500 linear lg:px-24 md:px-20 px-3 py-3 bg-[#F2F5FA]">
             <div className="navbar-1-1">
                 <div className="container mx-auto flex flex-wrap flex-row items-center justify-between md:px-0 md:py-1">
@@ -37,9 +37,9 @@ const Header = () => {
                         </a>
                     </div>
                 </div>
-            </div>            
+            </div>
         </section>
-    )
+  )
 }
 
 export default Header

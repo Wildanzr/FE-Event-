@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 
-const CardCompany = ({image, title, info}) => {
+const CardCompany = ({ image, title, info }) => {
   return (
     <div className="inline-block px-3">
       <div className="w-64 h-80 max-w-xs overflow-hidden bg-cyan-100 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out">
@@ -18,7 +19,7 @@ const CardCompany = ({image, title, info}) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CardCompany;
+export default CardCompany

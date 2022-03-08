@@ -1,27 +1,26 @@
-import React, { useState, useEffect } from "react"
-import CardEvent from "../util/CardEvent";
-import { Swiper, SwiperSlide } from "swiper/react";
+import React, { useState, useEffect } from 'react'
+import CardEvent from '../util/CardEvent'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import { useResizeDetector } from 'react-resize-detector'
-import { Pagination } from "swiper";
+import { Pagination } from 'swiper'
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
+import 'swiper/css'
+import 'swiper/css/pagination'
 
-import compfest1 from "../../images/temp/compfest1.jpg";
-import compfest2 from "../../images/temp/compfest2.jpg";
-import fair1 from "../../images/temp/fair1.jpg";
-import fair2 from "../../images/temp/fair2.jpg";
-import feskabi1 from "../../images/temp/feskabi1.png";
-import feskabi2 from "../../images/temp/feskabi2.jpg";
-import hology1 from "../../images/temp/hology1.png";
-import hology2 from "../../images/temp/hology2.jpg";
-import itcc1 from "../../images/temp/itcc1.jpg";
-import itcc2 from "../../images/temp/itcc2.jpg";
+import compfest1 from '../../images/temp/compfest1.jpg'
+import compfest2 from '../../images/temp/compfest2.jpg'
+import fair1 from '../../images/temp/fair1.jpg'
+import fair2 from '../../images/temp/fair2.jpg'
+import feskabi1 from '../../images/temp/feskabi1.png'
+import feskabi2 from '../../images/temp/feskabi2.jpg'
+import hology1 from '../../images/temp/hology1.png'
+import hology2 from '../../images/temp/hology2.jpg'
+import itcc1 from '../../images/temp/itcc1.jpg'
+import itcc2 from '../../images/temp/itcc2.jpg'
 
 const PopularEvents = () => {
-
-  const { width, height, ref } = useResizeDetector()
+  const { width, ref } = useResizeDetector()
   const [view, setView] = useState(3)
   const [space, setSpace] = useState(20)
 
@@ -29,55 +28,55 @@ const PopularEvents = () => {
     if (width >= 1021) {
       setSpace(150)
       setView(4)
-    }if (width >= 1024) {
+    } if (width >= 1024) {
       setSpace(350)
       setView(4)
-    }else if (width >= 768) {
+    } else if (width >= 768) {
       setSpace(300)
       setView(3)
-    }else if (width >= 640) {
+    } else if (width >= 640) {
       setSpace(100)
       setView(2)
-    }else if (width >= 481) {
+    } else if (width >= 481) {
       setSpace(230)
       setView(2)
-    }else {
+    } else {
       setView(1)
     }
   }, [width])
 
   const events = [
     {
-      name: "Hology",
+      name: 'Hology',
       img: hology2,
       ico: hology1,
-      info: "House of Technology (HOLOGY) merupakan event teknologi tahunan bertaraf nasional yang diselenggarakan oleh Fakultas Ilmu Komputer Universitas Brawijaya sejak tahun 2018. Di tahun keempat ini, HOLOGY terdiri dari 4 rangkaian acara yaitu webinar & workshop, competition, exhibition, dan awarding night.",
+      info: 'House of Technology (HOLOGY) merupakan event teknologi tahunan bertaraf nasional yang diselenggarakan oleh Fakultas Ilmu Komputer Universitas Brawijaya sejak tahun 2018. Di tahun keempat ini, HOLOGY terdiri dari 4 rangkaian acara yaitu webinar & workshop, competition, exhibition, dan awarding night.'
     },
     {
-      name: "Compfest",
+      name: 'Compfest',
       img: compfest2,
       ico: compfest1,
-      info: "COMPFEST adalah acara IT tahunan terbesar yang telah diselenggarakan lebih dari 10 tahun oleh mahasiswa Fakultas Ilmu Komputer, Universitas Indonesia.",
+      info: 'COMPFEST adalah acara IT tahunan terbesar yang telah diselenggarakan lebih dari 10 tahun oleh mahasiswa Fakultas Ilmu Komputer, Universitas Indonesia.'
     },
     {
-      name: "Feskabi",
+      name: 'Feskabi',
       img: feskabi2,
       ico: feskabi1,
-      info: "Festival Edukasi Bank Indonesia atau FesKaBI (sebelumnya dikenal sebagai BI Goes to Campus) merupakan salah satu program tahunan Bank Indonesia untuk mensosialisasikan dan mengkomunikasikan program-program strategis Bank Indonesia kepada publik, khususnya generasi muda.",
+      info: 'Festival Edukasi Bank Indonesia atau FesKaBI (sebelumnya dikenal sebagai BI Goes to Campus) merupakan salah satu program tahunan Bank Indonesia untuk mensosialisasikan dan mengkomunikasikan program-program strategis Bank Indonesia kepada publik, khususnya generasi muda.'
     },
     {
-      name: "Jakarta Fair",
+      name: 'Jakarta Fair',
       img: fair2,
       ico: fair1,
-      info: "Pekan Raya Jakarta atau Jakarta Fair adalah acara pameran tahunan terbesar di Asia Tenggara. Walaupun dinamai 'pekan', biasanya berlangsung selama satu bulan penuh dari bulan Juni sampai bulan Juli untuk memperingati selamat hari ulang tahun Jakarta. PRJ pertama diadakan pada tahun 1968.",
+      info: "Pekan Raya Jakarta atau Jakarta Fair adalah acara pameran tahunan terbesar di Asia Tenggara. Walaupun dinamai 'pekan', biasanya berlangsung selama satu bulan penuh dari bulan Juni sampai bulan Juli untuk memperingati selamat hari ulang tahun Jakarta. PRJ pertama diadakan pada tahun 1968."
     },
     {
-      name: "ITCC",
+      name: 'ITCC',
       img: itcc2,
       ico: itcc1,
-      info: "Information Technology Creative Competition adalah kompetisi bidang teknologi informasi yang diselenggarakan oleh himpunan mahasiswa teknologi informasi (HMTI) Universitas Udayana.",
-    },
-  ];
+      info: 'Information Technology Creative Competition adalah kompetisi bidang teknologi informasi yang diselenggarakan oleh himpunan mahasiswa teknologi informasi (HMTI) Universitas Udayana.'
+    }
+  ]
 
   return (
     <div className="w-full bg-[#F2F5FA] text-[#003366] py-10" ref={ref}>
@@ -92,14 +91,14 @@ const PopularEvents = () => {
             spaceBetween={space}
             grabCursor={true}
             pagination={{
-              dynamicBullets: true,
+              dynamicBullets: true
             }}
             modules={[Pagination]}
             className="mySwiper"
           >
             {events.map((event, idx) => {
               return (
-                <SwiperSlide>
+                <SwiperSlide key={idx}>
                   <CardEvent
                     image={event.img}
                     info={event.info}
@@ -108,13 +107,13 @@ const PopularEvents = () => {
                     color="bg-white"
                   />
                 </SwiperSlide>
-              );
+              )
             })}
           </Swiper>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default PopularEvents;
+export default PopularEvents

@@ -1,14 +1,13 @@
-import React from "react";
+/* eslint-disable react/prop-types */
+import React from 'react'
 
 const CardEvent = ({ image, title, info, color, icon }) => {
-  
-  if(info.length > 178 ? info = `${info.substring(0, 150)} ...................... ${info.substring(info.length - 20, info.length)}` : info = info)
-
-  return (
+  if (info.length > 178 ? info = `${info.substring(0, 150)} ...................... ${info.substring(info.length - 20, info.length)}` : info) {
+    return (
     <div className="w-full mx-7 text-[#003366] drop-shadow-md">
       <div className="flex items-center">
         <div className="relative mt-16 mb-8">
-          <div 
+          <div
             className={`rounded-2xl overflow-hidden shadow-md w-80 h-80 max-h-80 ${color} py-8 duration-300`}
           >
             <div className="absolute w-full ml-10 -mt-20 flex justify-start">
@@ -34,7 +33,8 @@ const CardEvent = ({ image, title, info, color, icon }) => {
         </div>
       </div>
     </div>
-  );
-};
+    )
+  }
+}
 
-export default CardEvent;
+export default CardEvent

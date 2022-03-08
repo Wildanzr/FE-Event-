@@ -1,9 +1,10 @@
-import React from "react";
+/* eslint-disable react/prop-types */
+import React from 'react'
 
-import Avatar from "../../images/avatar.png";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import Avatar from '../../images/avatar.png'
+import TwitterIcon from '@mui/icons-material/Twitter'
 
-import "../../css/HideScrollBar.css";
+import '../../css/HideScrollBar.css'
 
 const CardTestimony = ({ ava, name, sub, testi }) => {
   return (
@@ -11,7 +12,7 @@ const CardTestimony = ({ ava, name, sub, testi }) => {
       <div className="flex items-center">
         <div className="relative mt-16 mb-8">
           <div
-            className={`rounded-2xl overflow-hidden shadow-md w-80 h-80 max-h-80 bg-white py-8 duration-300`}
+            className={'rounded-2xl overflow-hidden shadow-md w-80 h-80 max-h-80 bg-white py-8 duration-300'}
           >
             <div className="flex flex-row px-5">
               <div className="flex w-3/12 items-center justify-center">
@@ -39,7 +40,7 @@ const CardTestimony = ({ ava, name, sub, testi }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CardTestimony;
+export default CardTestimony

@@ -1,10 +1,10 @@
 import React from 'react'
-import Logo from "../../images/logoevent.jpg"
+import Logo from '../../images/logoevent.jpg'
 
-import FacebookIcon from "@mui/icons-material/Facebook"
-import TwitterIcon from "@mui/icons-material/Twitter"
-import LinkedInIcon from "@mui/icons-material/LinkedIn"
-import PinterestIcon from "@mui/icons-material/Pinterest"
+import FacebookIcon from '@mui/icons-material/Facebook'
+import TwitterIcon from '@mui/icons-material/Twitter'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import PinterestIcon from '@mui/icons-material/Pinterest'
 
 const Footer = () => {
   return (
