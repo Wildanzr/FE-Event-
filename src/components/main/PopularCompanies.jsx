@@ -31,17 +31,17 @@ const PopularCompanies = () => {
       </h1>
       <div className="w-full flex flex-col">
         {companies.map((row, index) => {
-          const style = index === 1 ? 5 : 10
+          const style = 10
           return (
             <Marquee speed={30} gradient={false} key={index}>
               <div className="flex flex-row" key={index}>
                 {row.map((company, index) => {
                   return (
                     <div
-                      className={`flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 my-3 mx-${style} hover:bg-slate-300`}
+                      className={`flex w-48 h-16 bg-white rounded-md items-center justify-center blur-sm drop-shadow-sm px-5 my-3 mx-${style} hover:bg-slate-300`}
                       key={index}
                     >
-                      <img src={company} />
+                      <img src={company}/>
                     </div>
                   )
                 })}

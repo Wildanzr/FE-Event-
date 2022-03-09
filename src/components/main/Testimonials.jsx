@@ -56,20 +56,25 @@ const Testimonials = () => {
   const [space, setSpace] = useState(20)
 
   useEffect(() => {
-    if (width >= 1021) {
+    if (width >= 1280) {
+      setSpace(180)
+      console.log('width >= 1280')
+      setView(4)
+    } else if (width >= 1024) {
       setSpace(150)
-      setView(4)
-    } if (width >= 1024) {
-      setSpace(350)
-      setView(4)
+      console.log('width >= 1024')
+      setView(3)
     } else if (width >= 768) {
       setSpace(300)
+      console.log('width >= 768')
       setView(3)
     } else if (width >= 640) {
       setSpace(100)
+      console.log('width >= 640')
       setView(2)
     } else if (width >= 481) {
       setSpace(230)
+      console.log('width >= 481')
       setView(2)
     } else {
       setView(1)
@@ -80,14 +85,18 @@ const Testimonials = () => {
     <div className="w-full bg-[#F2F5FA] text-[#003366] py-10" ref={ref}>
       <div className="flex flex-col pt-5">
         <h2 className="flex justify-center items-center font-black text-3xl">
-          Testimonials
+          Happy Clients About Us
         </h2>
+        <h6 className='w-11/12 flex justify-end font-black text-sm font-nunito cursor-pointer text-[#8B8C89] hover:text-[#003366] duration-300'>
+          See More &gt;&gt;
+        </h6>
         <div className="flex flex-row py-">
         <Swiper
             slidesPerView={view}
             centeredSlides={true}
             spaceBetween={space}
             grabCursor={true}
+            initialSlide={2}
             pagination={{
               dynamicBullets: true
             }}

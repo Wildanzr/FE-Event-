@@ -14,11 +14,11 @@ const CardEvent = ({ image, title, info, color, icon }) => {
               <div className="h-20 w-20">
                 <img
                   src={icon}
-                  className="rounded-full object-cover h-full w-full bg-white shadow-md hover:brightness-50 duration-300 cursor-pointer"
+                  className="rounded-full object-cover h-full w-full bg-white shadow-md border-8 border-white hover:brightness-50 duration-300 cursor-pointer"
                 />
               </div>
             </div>
-            <h1 className="ml-6 font-bold text-xl">{title}</h1>
+            <h1 className="ml-6 pt-2 font-bold text-xl">{title}</h1>
             <div className="flex flex-col items-center mt-2">
               <div className="flex items-center justify-center w-10/12 h-32">
                 <img src={image} className="object-cover h-full w-full rounded-lg hover:brightness-50 duration-300 cursor-pointer" />
