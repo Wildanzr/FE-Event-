@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
 
-import Avatar from '../../images/avatar.png'
+import Avatar from '../../images/web/avatar.png'
 import TwitterIcon from '@mui/icons-material/Twitter'
 
 import '../../css/HideScrollBar.css'

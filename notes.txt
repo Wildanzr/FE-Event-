@@ -31,3 +31,4 @@
 #31 - Add and implement aos dependencies
 #32 - Add lint, formatting, and restructure images
 #33 - Popular event and Testimonials width fix
+#34 - Restructure folder
