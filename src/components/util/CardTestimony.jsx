@@ -10,7 +10,7 @@ const CardTestimony = ({ ava, name, sub, testi }) => {
   return (
     <div className="w-full mx-7 text-[#003366] drop-shadow-md">
       <div className="flex items-center">
-        <div className="relative mt-16 mb-8">
+        <div className="relative mt-5 mb-8">
           <div
             className={'rounded-2xl overflow-hidden shadow-md w-80 h-80 max-h-80 bg-white py-8 duration-300'}
           >

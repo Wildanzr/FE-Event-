@@ -89,7 +89,7 @@ const PopularEvents = () => {
         <h2 className="flex justify-center items-center font-black text-3xl">
           Popular Events
         </h2>
-        <h6 className='w-11/12 flex justify-end font-black text-sm font-nunito cursor-pointer text-[#8B8C89] hover:text-[#003366] duration-300'>
+        <h6 className='w-11/12 flex justify-end font-black text-sm font-nunito cursor-pointer text-[#8B8C89] hover:text-[#003366] duration-300 mt-5'>
           See More &gt;&gt;
         </h6>
         <div className="flex flex-row">
