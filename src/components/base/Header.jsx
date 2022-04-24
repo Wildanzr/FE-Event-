@@ -3,11 +3,13 @@ import React from 'react'
 import '../../css/Header.css'
 import Logo from '../../images/web/logoevent.jpg'
 
-const Header = ({ ev, co }) => {
+import { Link } from 'react-router-dom'
+
+const Header = ({ headerData }) => {
   return (
     <section className="h-full w-full border-box transition-all duration-500 linear lg:px-24 md:px-20 px-3 py-3 bg-[#F2F5FA]">
       <div className="navbar-1-1">
-        <div className="container mx-auto flex flex-wrap flex-row items-center justify-between md:px-0 md:py-1">
+        <div className="mx-auto flex flex-wrap flex-row items-center justify-between md:px-0 md:py-1">
           <a href="" className="flex font-medium items-center">
             <img
               src={Logo}
@@ -41,30 +43,31 @@ const Header = ({ ev, co }) => {
             id="menu"
           >
             <nav className="items-center justify-center text-base text-[#5C7B99] pt-4 space-x-0 space-y-4 lg:space-x-20 lg:flex lg:pt-0 lg:space-y-0">
-              <a
-                href=""
+              <Link
+                to="/"
                 className="text-center font-semibold block nav-link hover:font-bold hover:text-[#003366]"
               >
                 Home
-              </a>
-              <a
-                href={ev}
-                className="text-center font-semibold block nav-link hover:font-bold hover:text-[#003366]"
-              >
-                Event
-              </a>
-              <a
-                href={co}
-                className="text-center font-semibold block nav-link hover:font-bold hover:text-[#003366]"
-              >
-                Company
-              </a>
-              <a
-                href=""
+              </Link>
+
+              {headerData.map((item, index) => {
+                return (
+                  <a
+                    key={index}
+                    className="text-center font-semibold block nav-link hover:font-bold hover:text-[#003366]"
+                    href={item.link}
+                  >
+                    {item.title}
+                  </a>
+                )
+              })}
+
+              <Link
+                to='/contacts'
                 className="text-center font-semibold block nav-link hover:font-bold hover:text-[#003366]"
               >
                 Contacts
-              </a>
+              </Link>
             </nav>
           </div>
 

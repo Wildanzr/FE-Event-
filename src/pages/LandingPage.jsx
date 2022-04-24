@@ -10,9 +10,19 @@ import Testimonials from '../components/main/Testimonials'
 import Footer from '../components/base/Footer'
 
 const LandingPage = () => {
+  const headerData = [
+    {
+      title: 'Events',
+      link: '/#popEvent'
+    },
+    {
+      title: 'Companies',
+      link: '/#popCompany'
+    }
+  ]
   return (
     <>
-      <Header ev='#popEvent' co='#popCompany'/>
+      <Header headerData={headerData} />
       <Jumbotron />
       <Stats />
       <Information />

@@ -7,9 +7,23 @@ import Service from '../components/main/Service'
 import HowItWorks from '../components/main/HowItWorks'
 
 const AboutUs = () => {
+  const headerData = [
+    {
+      title: 'About',
+      link: '/about/#about'
+    },
+    {
+      title: 'Our Service',
+      link: '/about/#service'
+    },
+    {
+      title: 'How it Works',
+      link: '/about/#work'
+    }
+  ]
   return (
     <>
-        <Header ev='http://localhost:3000/#popEvent' co='http://localhost:3000/#popCompany'/>
+        <Header headerData={headerData}/>
         <AboutJumbotron />
         <AboutInfo />
         <Service />
