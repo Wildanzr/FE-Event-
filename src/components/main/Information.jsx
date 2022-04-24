@@ -67,15 +67,6 @@ const Information = () => {
               pihak penengah dalam komunikasi antara penyelenggara acara dengan
               sponsor atau mitra dalam melakukan kerja sama sponsorship.
             </p>
-
-            <a
-              href=""
-              className="flex items-center justify-center lg:justify-end"
-            >
-              <button className="bg-[#003366] px-5 py-1 rounded-lg text-base font-nunito text-semibold text-white mt-2 lg:mt-5">
-                Our Solutions
-              </button>
-            </a>
           </div>
         </div>
       </div>

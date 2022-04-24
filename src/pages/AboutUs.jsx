@@ -11,7 +11,7 @@ const AboutUs = () => {
   // Force page to scroll to top
   useEffect(() => {
     window.scrollTo(0, 0)
-  }, [])
+  })
 
   const headerData = [
     {

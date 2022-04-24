@@ -10,14 +10,17 @@ const Header = ({ headerData }) => {
     <section className="container mx-auto h-full w-full border-box transition-all duration-500 linear lg:px-24 md:px-20 px-3 py-3 bg-[#F2F5FA]">
       <div className="navbar-1-1">
         <div className="mx-auto flex flex-wrap flex-row items-center justify-between md:px-0 md:py-1">
-          <a href="" className="flex font-medium items-center">
-            <img
+          <Link
+            to="/"
+            className="flex font-medium items-center"
+          >
+          <img
               src={Logo}
               className="items-center rounded-lg"
               width="120"
               height="80"
             />
-          </a>
+          </Link>
           <label
             htmlFor="menu-toggle"
             className="cursor-pointer lg:hidden block"
@@ -63,7 +66,7 @@ const Header = ({ headerData }) => {
               })}
 
               <Link
-                to='/contacts'
+                to='/'
                 className="text-center font-semibold block nav-link hover:font-bold hover:text-[#003366]"
               >
                 Contacts
@@ -75,11 +78,13 @@ const Header = ({ headerData }) => {
             className="hidden text-center lg:flex lg:items-center lg:w-auto w-full"
             id="menu"
           >
-            <a href="">
+            <Link
+              to="/"
+            >
               <button className="bg-[#003366] font-nunito text-white items-center border-0 py-1 px-10 focus:outline-none rounded-lg font-medium text-base mt-6 lg:mt-0">
                 Login
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

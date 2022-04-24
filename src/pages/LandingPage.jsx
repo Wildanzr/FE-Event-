@@ -13,11 +13,11 @@ const LandingPage = () => {
   const headerData = [
     {
       title: 'Events',
-      link: '/#popEvent'
+      link: '#popEvent'
     },
     {
       title: 'Companies',
-      link: '/#popCompany'
+      link: '#popCompany'
     }
   ]
   return (
