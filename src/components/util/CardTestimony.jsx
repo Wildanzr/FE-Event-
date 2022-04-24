@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
 
-import Avatar from '../../images/web/avatar.png'
 import TwitterIcon from '@mui/icons-material/Twitter'
 
 import '../../css/HideScrollBar.css'
@@ -18,7 +17,7 @@ const CardTestimony = ({ ava, name, sub, testi }) => {
               <div className="flex w-3/12 items-center justify-center">
                 <div className="flex h-14 w-14">
                   <img
-                    src={Avatar}
+                    src={ava}
                     className="rounded-full object-cover h-full w-full bg-white shadow-md hover:brightness-50 duration-300 cursor-pointer"
                   />
                 </div>

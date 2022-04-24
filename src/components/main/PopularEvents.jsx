@@ -84,7 +84,7 @@ const PopularEvents = () => {
   ]
 
   return (
-    <div className="w-full bg-[#F2F5FA] text-[#003366] py-10" ref={ref}>
+    <div className="w-full bg-[#F2F5FA] text-[#003366] py-10" ref={ref} id='popEvent'>
       <div className="flex flex-col pt-5">
         <h2 className="flex justify-center items-center font-black text-3xl">
           Popular Events

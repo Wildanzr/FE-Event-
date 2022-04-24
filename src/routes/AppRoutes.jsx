@@ -4,6 +4,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import LandingPage from '../pages/LandingPage'
 import AboutUs from '../pages/AboutUs'
 
+import '../css/Base.css'
+
 const AppRoutes = () => {
   return (
         <BrowserRouter>

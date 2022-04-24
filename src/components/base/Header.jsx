@@ -47,13 +47,13 @@ const Header = () => {
                 Home
               </a>
               <a
-                href=""
+                href="#popEvent"
                 className="text-center font-semibold block nav-link hover:font-bold hover:text-[#003366]"
               >
                 Event
               </a>
               <a
-                href=""
+                href="#popCompany"
                 className="text-center font-semibold block nav-link hover:font-bold hover:text-[#003366]"
               >
                 Company

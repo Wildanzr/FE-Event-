@@ -25,7 +25,7 @@ const PopularCompanies = () => {
   const thirdRow = [Line, Linta, Micro, Samsung, Telkok, Xl]
   const companies = [firstRow, secondRow, thirdRow]
   return (
-    <div className="w-full flex flex-col items-center justify-center bg-[#F2F5FA] m-auto p-auto text-[#003366]">
+    <div className="w-full flex flex-col items-center justify-center bg-[#F2F5FA] m-auto p-auto text-[#003366]" id='popCompany'>
       <h1 className="text-3xl text-center font-black pb-5">
         Popular Companies
       </h1>

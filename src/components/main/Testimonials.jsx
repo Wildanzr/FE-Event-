@@ -4,6 +4,12 @@ import { useResizeDetector } from 'react-resize-detector'
 import CardTestimony from '../util/CardTestimony'
 import { Pagination } from 'swiper'
 
+import Elips1 from '../../images/temp/Ellipse1.png'
+import Elips2 from '../../images/temp/Ellipse2.png'
+import Elips3 from '../../images/temp/Ellipse3.png'
+import Elips4 from '../../images/temp/Ellipse4.png'
+import Elips5 from '../../images/temp/Ellipse5.png'
+
 import 'swiper/css'
 import 'swiper/css/pagination'
 
@@ -13,7 +19,7 @@ const Testimonials = () => {
       rate: 9,
       testi:
         'Bahannya bagus, gak mengecewakan barangnya, datangnya cepet syekali terimakasih',
-      pic: 'images/avatar.png',
+      pic: Elips1,
       name: 'Vina',
       org: 'BEM FILKOM'
     },
@@ -21,7 +27,7 @@ const Testimonials = () => {
       rate: 9,
       testi:
         'Seller nya langsung gece ngirimnya dan produknya bagus❤️tapi ekspedisi J&T sekarang sering bermasalah yahh Bahannya bagus, gak mengecewakan barangnya, datangnya cepet syekali terimakasih',
-      pic: 'images/avatar.png',
+      pic: Elips2,
       name: 'Utara',
       org: 'Gojek'
     },
@@ -29,7 +35,7 @@ const Testimonials = () => {
       rate: 10,
       testi:
         'Seriuss ini bagus bgtt lucu gitu loh yaampun, mana harganya murah lagi dan terjangkau',
-      pic: 'images/avatar.png',
+      pic: Elips3,
       name: 'Wildann',
       org: 'Tokopedia'
     },
@@ -37,7 +43,7 @@ const Testimonials = () => {
       rate: 8,
       testi:
         'Bagus bgt produknya dan emg udh kepengen beli dr kapan tau. Pengiriman agak lama tapi ini bukan salah sellernya ya',
-      pic: 'images/avatar.png',
+      pic: Elips4,
       name: 'Dilla',
       org: 'MalangFood'
     },
@@ -45,7 +51,7 @@ const Testimonials = () => {
       rate: 9,
       testi:
         'sorry gak ad fotonya. punya ponakan udh dkasih gak sempet kefoto tp barangnya oke punyaaaa😍😍😍',
-      pic: 'images/avatar.png',
+      pic: Elips5,
       name: 'Wisnu',
       org: 'Boss NFT'
     }
@@ -106,7 +112,7 @@ const Testimonials = () => {
             {testimonies.map((data, idx) => {
               return (
                 <SwiperSlide key={idx}>
-                  <CardTestimony name={data.name} sub={data.org} testi={data.testi}/>
+                  <CardTestimony name={data.name} sub={data.org} testi={data.testi} ava={data.pic}/>
                 </SwiperSlide>
               )
             })}
