@@ -8,14 +8,12 @@ import '../css/Base.css'
 
 const AppRoutes = () => {
   return (
-    <div className="container mx-auto" style={{ margin: '0 auto' }}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<AboutUs />} />
         </Routes>
       </BrowserRouter>
-    </div>
   )
 }
 

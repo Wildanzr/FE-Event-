@@ -2,6 +2,8 @@ import React from 'react'
 import About from '../../images/web/about.png'
 import Solution from '../../images/web/solution.png'
 
+import { Link } from 'react-router-dom'
+
 const Information = () => {
   return (
     <div className="flex w-full bg-[#F2F5FA] text-[#003366] justify-center items-center py-10">
@@ -30,15 +32,14 @@ const Information = () => {
               maupun kegiatan yang tidak terbatas pada lembaga atau perusahaan
               tertentu.
             </p>
-
-            <a
-              href=""
+            <Link
+              to="/about"
               className="flex items-center justify-center lg:justify-start"
             >
               <button className="bg-[#003366] px-5 py-1 rounded-lg text-base font-nunito text-semibold text-white mt-2 lg:mt-5">
                 About Us
               </button>
-            </a>
+            </Link>
           </div>
         </div>
 

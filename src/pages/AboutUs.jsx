@@ -1,15 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import Header from '../components/base/Header'
+import Footer from '../components/base/Footer'
 import AboutJumbotron from '../components/about/AboutJumbotron'
 import AboutInfo from '../components/about/AboutInfo'
 import Service from '../components/about/Service'
 import HowItWorks from '../components/about/HowItWorks'
 
 const AboutUs = () => {
+  // Force page to scroll to top
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const headerData = [
     {
-      title: 'About',
+      title: 'Info',
       link: '/about/#about'
     },
     {
@@ -21,6 +27,7 @@ const AboutUs = () => {
       link: '/about/#work'
     }
   ]
+
   return (
     <>
         <Header headerData={headerData}/>
@@ -28,6 +35,7 @@ const AboutUs = () => {
         <AboutInfo />
         <Service />
         <HowItWorks />
+        <Footer />
     </>
   )
 }
