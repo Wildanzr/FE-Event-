@@ -1,10 +1,10 @@
 import React from 'react'
 
 import Header from '../components/base/Header'
-import AboutJumbotron from '../components/main/AboutJumbotron'
-import AboutInfo from '../components/main/AboutInfo'
-import Service from '../components/main/Service'
-import HowItWorks from '../components/main/HowItWorks'
+import AboutJumbotron from '../components/about/AboutJumbotron'
+import AboutInfo from '../components/about/AboutInfo'
+import Service from '../components/about/Service'
+import HowItWorks from '../components/about/HowItWorks'
 
 const AboutUs = () => {
   const headerData = [
