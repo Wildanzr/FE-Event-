@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 import '../../css/Header.css'
 import Logo from '../../images/web/logoevent.jpg'
 
-const Header = () => {
+const Header = ({ ev, co }) => {
   return (
     <section className="h-full w-full border-box transition-all duration-500 linear lg:px-24 md:px-20 px-3 py-3 bg-[#F2F5FA]">
       <div className="navbar-1-1">
@@ -47,13 +48,13 @@ const Header = () => {
                 Home
               </a>
               <a
-                href="#popEvent"
+                href={ev}
                 className="text-center font-semibold block nav-link hover:font-bold hover:text-[#003366]"
               >
                 Event
               </a>
               <a
-                href="#popCompany"
+                href={co}
                 className="text-center font-semibold block nav-link hover:font-bold hover:text-[#003366]"
               >
                 Company

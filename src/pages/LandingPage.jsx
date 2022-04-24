@@ -12,7 +12,7 @@ import Footer from '../components/base/Footer'
 const LandingPage = () => {
   return (
     <>
-      <Header />
+      <Header ev='#popEvent' co='#popCompany'/>
       <Jumbotron />
       <Stats />
       <Information />

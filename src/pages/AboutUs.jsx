@@ -9,7 +9,7 @@ import HowItWorks from '../components/main/HowItWorks'
 const AboutUs = () => {
   return (
     <>
-        <Header />
+        <Header ev='http://localhost:3000/#popEvent' co='http://localhost:3000/#popCompany'/>
         <AboutJumbotron />
         <AboutInfo />
         <Service />
