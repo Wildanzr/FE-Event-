@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const Header = ({ headerData }) => {
   return (
-    <section className="h-full w-full border-box transition-all duration-500 linear lg:px-24 md:px-20 px-3 py-3 bg-[#F2F5FA]">
+    <section className="container mx-auto h-full w-full border-box transition-all duration-500 linear lg:px-24 md:px-20 px-3 py-3 bg-[#F2F5FA]">
       <div className="navbar-1-1">
         <div className="mx-auto flex flex-wrap flex-row items-center justify-between md:px-0 md:py-1">
           <a href="" className="flex font-medium items-center">

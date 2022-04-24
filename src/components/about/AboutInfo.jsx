@@ -5,7 +5,7 @@ import Solution from '../../images/web/solution.png'
 
 const AboutInfo = () => {
   return (
-    <div className="flex w-full bg-[#F2F5FA] text-[#003366] justify-center items-center py-10" id='about'>
+    <div className="container mx-auto flex w-full bg-[#F2F5FA] text-[#003366] justify-center items-center py-10" id='about'>
       <div className="w-10/12">
         <div
           className="flex flex-col justify-center items-center py-0 lg:flex-row"

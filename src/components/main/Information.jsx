@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const Information = () => {
   return (
-    <div className="flex w-full bg-[#F2F5FA] text-[#003366] justify-center items-center py-10">
+    <div className="container mx-auto flex w-full bg-[#F2F5FA] text-[#003366] justify-center items-center py-10">
       <div className="w-11/12">
         <div
           className="flex flex-col justify-center items-center py-0 lg:flex-row"

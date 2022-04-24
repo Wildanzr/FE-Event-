@@ -9,7 +9,7 @@ import PinterestIcon from '@mui/icons-material/Pinterest'
 const Footer = () => {
   return (
     <div className="bg-white text-[#003366] mt-10">
-      <div className="flex flex-col items-center md:flex-row">
+      <div className="container mx-auto flex flex-col items-center md:flex-row">
         <div className="flex flex-col w-10/12 my-5">
           <div className=" w-full mx-auto md:w-8/12">
             <img src={Logo} className="w-2/4 my-5 rounded-lg" />
@@ -84,8 +84,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="w-10/12 mx-auto h-[0.25px] bg-white mb-4 lg:w-11/12" />
-      <p className="text-base pb-2 text-white text-center lg:text-lg">
+      <div className="w-10/12 mx-auto h-[0.25px] bg-[#003366] mb-4 lg:w-11/12" />
+      <p className="text-base pb-2 text-center lg:text-sm">
         &copy; 2022 EventPlus | All Rights Reserved
       </p>
     </div>
