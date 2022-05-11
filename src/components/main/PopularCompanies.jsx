@@ -38,7 +38,7 @@ const PopularCompanies = () => {
                 {row.map((company, index) => {
                   return (
                     <div
-                      className={`flex w-48 h-16 bg-white rounded-md items-center justify-center blur-sm drop-shadow-sm px-5 my-3 mx-${style} hover:bg-slate-300`}
+                      className={`flex w-48 h-16 bg-white rounded-md items-center justify-center drop-shadow-sm px-5 my-3 mx-${style} hover:bg-slate-300`}
                       key={index}
                     >
                       <img src={company}/>

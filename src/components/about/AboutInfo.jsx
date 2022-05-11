@@ -1,14 +1,14 @@
 import React from 'react'
 
-import About from '../../images/web/about.png'
-import Solution from '../../images/web/solution.png'
+import About from '../../images/web/big1.png'
+import Solution from '../../images/web/big2.png'
 
 const AboutInfo = () => {
   return (
     <div className="container mx-auto flex w-full bg-[#F2F5FA] text-[#003366] justify-center items-center py-10" id='about'>
       <div className="w-10/12">
         <div
-          className="flex flex-col justify-center items-center py-0 lg:flex-row"
+          className="flex flex-col justify-center items-center pt-0 pb-10 lg:flex-row"
           data-aos={'zoom-in-left'}
           data-aos-anchor="#about"
         >
@@ -36,7 +36,7 @@ const AboutInfo = () => {
         </div>
 
         <div
-          className="flex flex-col justify-center items-center py-0 lg:flex-row-reverse"
+          className="flex flex-col justify-center items-center pt-10 pb-0 lg:flex-row-reverse"
           data-aos={'zoom-in-right'}
           data-aos-anchor="#solution"
         >

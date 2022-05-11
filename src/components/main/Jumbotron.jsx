@@ -15,7 +15,7 @@ const Jumbotron = () => {
           mendapat sponsor dengan mudah. Buat Event Online sekarang lebih mudah
           di EventPlus.
         </p>
-        <Link to="/about">
+        <Link to="/getstarted">
           <button className="bg-[#003366] font-nunito text-white items-center py-2 px-8 rounded-lg text-base focus:outline-none mt-5 lg:mt-0">
             Get Started
           </button>
