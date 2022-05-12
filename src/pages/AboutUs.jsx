@@ -5,7 +5,6 @@ import Footer from '../components/base/Footer'
 import AboutJumbotron from '../components/about/AboutJumbotron'
 import AboutInfo from '../components/about/AboutInfo'
 import Service from '../components/about/Service'
-import HowItWorks from '../components/about/HowItWorks'
 
 const AboutUs = () => {
   // Force page to scroll to top
@@ -21,10 +20,6 @@ const AboutUs = () => {
     {
       title: 'Our Service',
       link: '/about/#service'
-    },
-    {
-      title: 'How it Works',
-      link: '/about/#work'
     }
   ]
 
@@ -34,7 +29,6 @@ const AboutUs = () => {
         <AboutJumbotron />
         <AboutInfo />
         <Service />
-        <HowItWorks />
         <Footer />
     </>
   )

@@ -9,13 +9,13 @@ import '../css/Base.css'
 
 const AppRoutes = () => {
   return (
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/getstarted" element={<GetStarted />} />
-        </Routes>
-      </BrowserRouter>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/getstarted" element={<GetStarted />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

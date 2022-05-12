@@ -52,18 +52,18 @@ const AboutInfo = () => {
               done?
             </h3>
             <div className="flex flex-col">
-              <div className="flex flex-row my-5 mb-10">
-                <p className="w-10/12 text-right">Menciptakan solusi baru untuk menyelesaikan permasalahan event organizer dan perusahaan mitra</p>
-                <div className="flex w-2/12 justify-end items-center">
+              <div className="flex flex-col-reverse lg:flex-row my-5 mb-10">
+                <p className="flex w-full lg:w-10/12 text-center lg:text-right">Menciptakan solusi baru untuk menyelesaikan permasalahan event organizer dan perusahaan mitra</p>
+                <div className="flex w-full justify-center pb-5 lg:w-2/12 lg:justify-end lg:items-center lg:pb-0">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full border-4 border-[#003366] border-dashed">
                     <p className="text-2xl text-[#003366]">01</p>
                   </div>
                 </div>
               </div>
 
-              <div className="flex flex-row">
-                <p className="w-10/12 text-right">Memudahkan event organizer mendapatkan benefit dari perusahaan mitra dan sebaliknya</p>
-                <div className="flex w-2/12 justify-end items-center">
+              <div className="flex flex-col-reverse lg:flex-row">
+                <p className="w-full lg:w-10/12 text-center lg:text-right">Memudahkan event organizer mendapatkan benefit dari perusahaan mitra dan sebaliknya</p>
+                <div className="flex w-full justify-center pb-5 lg:w-2/12 lg:justify-end lg:items-center lg:pb-0">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full border-4 border-[#003366] border-dashed">
                     <p className="text-2xl text-[#003366]">02</p>
                   </div>

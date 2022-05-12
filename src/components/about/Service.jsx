@@ -11,8 +11,8 @@ const Service = () => {
         <h3 className="text-3xl font-bold">Our Services</h3>
       </div>
 
-      <div className="flex flex-row mt-10">
-        <div className="flex flex-col h-72 w-64 bg-white rounded-xl shadow-xl items-center mx-10">
+      <div className="flex flex-col lg:flex-row mt-10">
+        <div className="flex flex-col h-72 w-64 my-10 lg:my-0 bg-white rounded-xl shadow-xl items-center mx-10">
           <div className="flex w-52 h-28 my-7 items-center justify-center">
             <img src={Pop1} className='object-contain grayscale'/>
           </div>
@@ -22,8 +22,8 @@ const Service = () => {
         </div>
 
         <div className="flex mx-10">
-          <div className="flex flex-col h-72 w-64 bg-[#6096BA] -rotate-6 translate-x-4 translate-y-3 rounded-xl shadow-xl items-center"/>
-          <div className="flex flex-col absolute h-72 w-64 bg-white rounded-xl shadow-xl items-center">
+          <div className="flex flex-col h-72 w-64 my-10 lg:my-0 bg-[#6096BA] -rotate-6 translate-x-4 translate-y-3 rounded-xl shadow-xl items-center"/>
+          <div className="flex flex-col absolute h-72 w-64 my-10 lg:my-0 bg-white rounded-xl shadow-xl items-center">
           <div className="flex w-52 h-28 my-7 items-center justify-center">
             <img src={Pop2} className='object-contain grayscale'/>
             </div>
@@ -33,7 +33,7 @@ const Service = () => {
           </div>
         </div>
 
-        <div className="flex flex-col h-72 w-64 bg-white rounded-xl shadow-xl items-center mx-10">
+        <div className="flex flex-col h-72 w-64 my-10 lg:my-0 bg-white rounded-xl shadow-xl items-center mx-10">
           <div className="flex w-52 h-28 my-7 items-center justify-center">
           <img src={Pop3} className='object-contain grayscale'/>
           </div>
