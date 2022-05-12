@@ -66,7 +66,7 @@ const Header = ({ headerData }) => {
               })}
 
               <Link
-                to='/'
+                to='/contact'
                 className="text-center font-semibold block nav-link hover:font-bold hover:text-[#003366]"
               >
                 Contacts
