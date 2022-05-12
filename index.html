@@ -3,14 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
     <title>Event Plus</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div id="load"></div>
     <div id="root" class="text-[#003366] bg-[#F2F5FA]"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      document.onreadystatechange = function () {
+        var state = document.readyState;
+        if (state == "interactive") {
+          document.getElementById("contents").style.visibility = "hidden";
+        } else if (state == "complete") {
+          setTimeout(function () {
+            document.getElementById("interactive");
+            document.getElementById("load").style.visibility = "hidden";
+            document.getElementById("contents").style.visibility = "visible";
+          }, 1000);
+        }
+      };
+    </script>
   </body>
 </html>
